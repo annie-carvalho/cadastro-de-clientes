@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de cadastro de clientes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <h1>Sistema de cadastro de clientes</h1>
+        <form id="clientForm">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Nome"required>
+            
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="E-mail" required>
+            
+            <button type="submit">Salvar cliente</button>
+        </form>
+
+        <h2>Clientes cadastrados</h2>
+        <ul id="clientList"></ul>
+
+        <template id="clientItem">
+            <li>
+                <span class="info"></span>
+                <button class="delete">Excluir</button>
+            </li>
+        </template>
+
+    </main>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
